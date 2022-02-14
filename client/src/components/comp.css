@@ -1,5 +1,5 @@
 .nav-wrapper{
-    height: 60px !important;
+    height: 75px !important;
 }
 .nav-wrapper span{
     margin-left: 25px;
@@ -16,8 +16,9 @@
     margin-top: 20px !important;
     margin-left: 90px !important;
     width:300px !important;
-    height:20px !important;
+    height:30px !important;
     font-size:13px !important
+    
 }
 
 .gallery{
@@ -27,8 +28,8 @@
     justify-content: space-around;
 }
 .item{
-    height: 250px;
-    width: 250px;
+    height: 250px !important;
+    width: 250px !important;
 }
 .card{
     margin-left: 20px;
@@ -36,4 +37,28 @@
 
 .modal {
     height: 300px !important;
+}
+.img-sec{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.prod-img{
+    
+    padding: 20px;
+}
+.title{
+    color: rgb(185, 34, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.type{
+    font-size: 30px;
+}
+.price p{
+    font-size: 20px;
+}
+.price{
+    font-size: 50px;
+}
+.details{
+    margin-left: 100px;
 }

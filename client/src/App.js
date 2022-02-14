@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Body from './components/Prods';
-import Desc from './components/staticpage';
+import Desc from './components/Staticpage';
 
 
 
@@ -12,10 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route exact path='/' element={<Body />} />
-          <Route path='/static' element={<Desc />} />
+          <Route path='/:_id' element={<Desc />} />
       </Routes>
-    
-    
     </BrowserRouter>
 
   );
