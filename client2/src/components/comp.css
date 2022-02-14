@@ -1,0 +1,39 @@
+.nav-wrapper{
+    height: 60px !important;
+}
+.nav-wrapper span{
+    margin-left: 25px;
+    padding: 10px;
+    vertical-align: middle !important;
+}
+.nav-wrapper a{
+    vertical-align: middle !important;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.search-bar{
+    margin-top: 20px !important;
+    margin-left: 90px !important;
+    width:300px !important;
+    height:20px !important;
+    font-size:13px !important
+}
+
+.gallery{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    height: 250px;
+    width: 250px;
+}
+.card{
+    margin-left: 20px;
+}
+
+.modal {
+    height: 300px !important;
+}
