@@ -1,31 +1,15 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
+const cors = require('cors')
+const mongoose = require("mongoose");
+const bodyParser = require('body-parser');
+require('./modal/productSchema')
+
+const Connection = require('./db/dbconnection');
+const Products = require('./routes/products')
 const PORT = 5000;
-const bodyParser = require("body-parser");
-const {MONGOURI} = require('./keys');
-const cors = require("cors");
-require('./models/prod')
 
-mongoose.connect(MONGOURI, {
-    useNewUrlParser:true,
-    useUnifiedTopology: true
-})
-mongoose.connection.on('connected', ()=>{
-    console.log('connected to mongo')
-})
-mongoose.connection.on('error', (err)=>{
-    console.log('Mongo error', err)
-})
-
-
+Connection();
 app.use(cors());
-
-
-app.use(bodyParser());
-app.use(express.json())
-app.use(require('./routes/prodlist'))
-
-app.listen(PORT, ()=>{
-    console.log('Server is listening on', PORT)
-})
+app.use('/', Products);
+app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
